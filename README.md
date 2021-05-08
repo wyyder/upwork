@@ -1,9 +1,16 @@
-# Wyyder 
+# Wyyder
 
-[![Twitter](https://img.shields.io/badge/twitter-@wyyder-green.svg)](https://twitter.com/wyyder)
+<a href="https://twitter.com/wyyder">
+      <img alt="Twitter - Follow..." title="Please Follow..." 
+src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/>
+</a>
+
 <a href="https://www.youtube.com/channel/UCklWKcVOeAAV1SC1eQwnLNQ?sub_confirmation=1">
-      <img alt="youtube subscribers" title="Please Subscribe..." src="https://freshidea.com/jonah/youtube-api/subscribers-badge.php?label=Subscribers&style=for-the-badge&color=red&labelColor=ce4630"/></a> 
+      <img alt="Youtube - Please Subscribe..." title="Please Subscribe..."
+src="https://img.shields.io/badge/-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white"/>
+</a>
 
 ## Projects
-[dockerize-jenkins-with-deps](./dockerize-jenkins-with-deps/README.md)
-(Jenkins | docker | compose.yml)
+| Youtube | Project | Technology |
+| --- | --- | --- |
+| <a href="https://www.youtube.com/watch?v=P7PAyegw8Ss"><img alt="Youtube - Please Subscribe..." title="Please Subscribe..." src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/></a> | [dockerize-jenkins-with-deps](./dockerize-jenkins-with-deps/README.md) | (Jenkins / docker / compose.yml) |

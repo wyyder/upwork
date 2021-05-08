@@ -1,54 +1,58 @@
-# Wyyder 
+# Dockerize Jenkins with dependencies
 
-[![Twitter](https://img.shields.io/badge/twitter-@wyyder-green.svg)](https://twitter.com/wyyder)
+<a href="https://twitter.com/wyyder">
+      <img alt="Twitter - Follow..." title="Please Follow..." 
+src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/>
+</a>
 <a href="https://www.youtube.com/channel/UCklWKcVOeAAV1SC1eQwnLNQ?sub_confirmation=1">
-      <img alt="youtube subscribers" title="Please Subscribe..." src="https://freshidea.com/jonah/youtube-api/subscribers-badge.php?label=Subscribers&style=for-the-badge&color=red&labelColor=ce4630"/></a> 
+      <img alt="Youtube - Please Subscribe..." title="Please Subscribe..." src="https://img.shields.io/badge/-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white"/>
+</a>
+<a href="https://www.youtube.com/watch?v=P7PAyegw8Ss">
+      <img alt="Youtube - Please Subscribe..." title="Please Subscribe..." src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
+</a>
 
 ## Question / Upwork Job
+
 ![Question](https://raw.githubusercontent.com/wyyder/upwork/master/dockerize-jenkins-with-deps/job_details.png?raw=true)
 
-## Youtube 
-[Watch POC](https://www.youtube.com/watch?v=P7PAyegw8Ss)
+## Docker file & Docker compose yml
 
-## Jenkins Docker with below dependencies
+[Docker File](./Dockerfile)
+
+[Docker Compose yml](./docker-compose.yml)
 
 ```bash
-curl
-python3
-php7
-eyeD3 #(python)
-atomicparsley
-ffmpeg
-ImageMagick
-```
-
-## Steps to Run jenkins container with customised dependencies
-
-### clone this repository 
-```bash
+# clone repository
 git clone https://github.com/wyyder/upwork.git
-```
-### Build image in local machine
-```bash
+cd upwork/dockerize-jenkins-with-deps
+
+# Build image in local
 docker build -t wyyder/jenkins-customised .
-```
 
-### Start jenkins using docker compose yml
-```bash
+# Verify image 
+docker images
+
+# Start jenkins using docker compose yml
 docker-compose up -d
-```
-
-# Get the initial admin password
-```bash
-docker exec wyyder-jenkins cat /var/jenkins_home/secrets/initialAdminPassword
-```
 
 # Confirm the wyyder-jenkins container is running
-```bash
 docker container ls
-```
-# Check version
-```bash
+
+# Get the initial admin password
+docker exec wyyder-jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+
+# Launch jenkins in browser http:localhost:8080 & verify
+
+# Stop container 
+docker container stop wyyder-jenkins
+
+# Remove container 
+docker container rm wyyder-jenkin
+
+# Remove image 
+docker image rm wyyder/jenkins-customised
+
+# In Jenkins job use to verify the version of dependencies
 curl --version
 python3 --version 
 php --version
