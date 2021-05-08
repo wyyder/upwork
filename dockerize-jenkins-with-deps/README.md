@@ -5,7 +5,7 @@
       <img alt="youtube subscribers" title="Please Subscribe..." src="https://freshidea.com/jonah/youtube-api/subscribers-badge.php?label=Subscribers&style=for-the-badge&color=red&labelColor=ce4630"/></a> 
 
 ## Question / Upwork Job
-[Question](https://raw.githubusercontent.com/wyyder/upwork/master/dockerize-jenkins-with-deps/job_details.png?raw=true)
+![Question](https://raw.githubusercontent.com/wyyder/upwork/master/dockerize-jenkins-with-deps/job_details.png?raw=true)
 
 ## Youtube 
 [Watch POC](https://www.youtube.com/watch?v=P7PAyegw8Ss)
